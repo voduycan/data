@@ -149,7 +149,7 @@ button {
 }
 
 .commission-table>thead {
-    background: #1b384f;
+    background: #659BD1;
 }
 
 .commission-table>tbody {
@@ -2268,7 +2268,7 @@ p#amount {
 .menu-title-sidebar:hover,
 .menu-title-sidebar:active,
 .menu-title-sidebar:focus {
-    background: #4a6176;
+    background: #659BD1;
 }
 
 .menu-title-sidebar.active a,
@@ -2294,7 +2294,7 @@ p#amount {
 .menu-sub-sidebar a:active,
 .menu-sub-sidebar a:focus {
     font-weight: bold;
-    color: #4a6176;
+    color: #659BD1;
 }
 
 .right-account {
@@ -2307,7 +2307,7 @@ p#amount {
     color: #fff;
     font-weight: 700;
     font-size: 12px;
-    background: #1b384f;
+    background: #659BD1;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -2381,7 +2381,7 @@ p#amount {
 
 .content-account-panel h2 {
     font-weight: 800;
-    color: #4a6176;
+    color: #659BD1;
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 25px;
@@ -2390,7 +2390,7 @@ p#amount {
 .content-account-panel h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    color: #4a6176;
+    color: #659BD1;
     font-weight: bold;
     margin: 0;
 }
@@ -2401,7 +2401,7 @@ p#amount {
 
 .content-account-panel h3 {
     font-weight: 800;
-    color: #4a6176;
+    color: #659BD1;
     font-size: 15px;
     line-height: 18px;
 }
@@ -3060,7 +3060,7 @@ p#amount {
 }
 
 .modal-block-top {
-    color: #4a6176;
+    color: #659BD1;
     font-size: 12px;
     font-weight: bold;
     font-family: 'Open Sans';
@@ -3105,7 +3105,7 @@ p#amount {
 }
 
 .bottom-content-booking {
-    background: #4a6176;
+    background: #659BD1;
     padding: 10px 0;
 }
 
@@ -3122,7 +3122,7 @@ p#amount {
 
 .modal-content-booking .bottom-content-booking .fa-times {
     font-size: 9px;
-    color: #4a6176;
+    color: #659BD1;
 }
 
 .modal-content-booking .bottom-content-booking span {
@@ -3153,7 +3153,7 @@ p#amount {
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 500;
-    color: #4a6176;
+    color:  #659BD1;
     margin-top: 15px;
     margin-bottom: 15px;
 }
