@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelWards</title>
+    <!-- Styles -->
+    <link href="app.css" rel="stylesheet">
+</head>
+<body class="">
+    <nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.svg" class="d-none d-lg-block"/>
+            <img src="assets/logo-icon.svg" class="d-block d-lg-none"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                    <a class="nav-link d-block d-md-none my-3 text-secondary" href="#">SIGN IN</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about">ABOUT</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOW TO</a>
+                </li>
+
+                <li class="nav-item d-md-none d-xl-block  ">
+                    <a class="nav-link" href="/faq">FAQs</a>
+                </li>
+
+                <li class="nav-item d-md-none d-xl-block  ">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+
+                <li class="nav-item dropdown  d-none d-md-block d-xl-none px-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MORE
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right px-4" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item d-block d-xl-none p-3" href="#">FAQs</a>
+                        <a class="dropdown-item d-block d-xl-none p-3" href="#">CONTACT US</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#"><img src="assets/icons/phone-outline.svg" class="mr-2"/>1300 49 30 50</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0 ml-3 d-none d-md-block">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown sign-in-dropdown">
+                        <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <button class="btn btn-sm btn-outline-secondary btn-rounded sign-in-button" data-toggle="aside" data-target="#right-aside">SIGN IN</button>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <form class="py-4 px-3">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-outline-secondary btn-rounded">Sign In</button>
+                                <button type="button" class="btn btn-sm btn-link ml-3"  data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </dvi>
+</nav>    <div class="page-hotel">
+    <section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <a class="btn btn-link mt-5" href="#"><i class="material-icons">chevron_left</i> Back</a>
+            </div>
+            <div class="col-3">
+                <div class="price mt-5 pt-3">
+                    <h5 class="text-black-50 py-2">PRICE PER STAY FROM</h5>
+                    <div class="text-primary"><strong>AUD</strong> <span class="h1"><strong>394.91</strong></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    <section class="info py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary btn-block book-room">BOOK ROOM</button>
+                <ul class="be-list-group py-3">
+                    <li class="py-1">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/phone-outline.svg" /></div> <small>+006568186666</small>
+                    </li>
+                    <li class="py-1">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/globe-outline.svg" /></div>  <small>www.bayhotelsingapore.com</small>
+                    </li>
+                    <li class="py-1">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/mail-outline.svg" /></div>  <small>reservations@bayhotelsingapore.com</small>
+                    </li>
+                    <li class="pt-4 pb-1">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/info-outline.svg" /></div> <a href="#" data-toggle="modal" data-target="#facilitiesModal"><small class>Facilities</small></a>
+                    </li>
+                    <li class="pb-4">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/photo-outline.svg" /></div> <a href="#" data-toggle="modal" data-target="#galleryModal"><small class>Photos</small></a>
+                    </li>
+                </ul>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53925.44986416948!2d103.79030334101489!3d1.362520748456048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1526652291969" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <button class="btn btn-primary btn-sm view-map"  data-toggle="modal" data-target="#mapModal">View map</button>
+                    
+            </div>
+            <div class="col-6">
+                <h1>Bay Hotel Singapore 
+                    <div class="rating">
+                        <img src="assets/icons/star.svg" />
+                        <img src="assets/icons/star.svg" />
+                        <img src="assets/icons/star.svg" />
+                        <img src="assets/icons/star.svg" />
+                    </div>
+                </h1>
+                <p>This 4-star hotel is within close proximity of Singapore Cruise Centre and HarbourFront Centre. With a stay at Bay Hotel Singapore in Singapore (Bukit Merah), you'll be minutes from ... VivoCity and close to Universal Studios Singapore®.</p>
+                <p>Make yourself at home in one of the 333 air-conditioned rooms featuring refrigerators and LCD televisions. Complimentary wireless Internet access keeps you connected, and cable programming is available for your entertainment. Private bathrooms have rainfall showerheads and complimentary toiletries. Conveniences include safes and complimentary newspapers, as well as phones with free local calls.</p>
+                <p>Enjoy recreational amenities such as an outdoor pool and a fitness center.
+                Satisfy your appetite at the hotel's restaurant, which serves breakfast, lunch, and dinner, or stay in and take advantage of 24-hour room service.
+                Featured amenities include complimentary newspapers in the lobby, dry cleaning/laundry services, and a 24-hour front desk. Free self parking is available onsite.</p>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary btn-block change-price" data-toggle="modal" data-target="#changePriceModal">Change Price<i class="material-icons"> chevron_right </i></button>
+                <ul class="be-list-group py-3">
+                    <li class="py-1">
+                        <div class="be-list-group--icon mr-2"><img src="assets/icons/location.svg" /></div><span class="text-primary">50 Telok Blangah road Singapore, Singapore</span>
+                    </li>
+                    <li class="py-1">
+                        <div class="be-list-group--icon mr-2"></div><span class="text-muted">2km to Singapore</span>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col"><img src="assets/trust-you.svg" height="32"/></div>
+                    <div class="col text-right"><span class="text-success">excellent  89.0</span></div>
+                </div>
+                <div class="customer-reviews py-3">
+                    <p>"Great location. Convenient car access and well-priced parking."</p>
+                    <p>"Great, affordable bar with good drinks."</p>
+                    <p>"Affordable restaurant with great food."</p>
+                </div>
+                <a href="#" class="btn btn-outline-primary px-5">See all reviews</a>
+            </div>
+        </div>
+    </div>
+</section>    <section class="search pt-5 pl-0 pr-0 pl-xl-5 pr-xl-5 pb-3">
+    <div class="container-fluid">
+        <div class="row search-box  no-gutters">
+    <div class="col-3">
+        <input type="text" class="search-input" placeholder="search" />
+    </div>
+    <div class="col-2">
+        <div class="search--dropdown checkin">
+            <div class="form-item">
+                <label>Checkin</label>
+                <div class="form-item--value">
+                    <input id="checkin-datepicker" class="datepicker-input" value="05-16-2018" />
+                </div>
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/date-picker.svg" height="18" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="search--dropdown checkout">
+            <div class="form-item">
+                <label>Check Out</label>
+                <div class="form-item--value">
+                    <input id="checkout-datepicker" class="datepicker-input" value="05-17-2018" />
+                </div>
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/date-picker.svg" height="18" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+    </div>
+    <div class="col-3 dropdown">
+        <div class="search--dropdown" data-toggle="dropdown">
+            <div class="form-item " id="dropdownGuest">
+                <label>Rooms & Guests</label>
+                <div class="form-item--value">1 Room, 1 Adult, 0 child</div>
+
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/guests-outline.svg" height="12" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+        <div class="dropdown-menu pt-2 px-4" aria-labelledby="dropdownGuest">
+            <form>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Rooms
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-room" placeholder="1">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Adults
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-adults" placeholder="1">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Children
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-children" placeholder="0">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-2">
+        <button class="btn btn-primary btn-lg btn-block">SEARCH</button>
+    </div>
+</div>    </div>
+</section>
+    <section class="rooms py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="room my-3">
+                    <div class="row">
+                        <div class="col-3 d-flex  align-items-center">
+                            <h3 class="px-4" data-toggle="modal" data-target="#galleryModal"><strong>Deluxe Room Queen Bed</strong></h3>
+                        </div>
+                        <div class="col-5 d-flex  align-items-center">
+                            <div class="description text-uppercase">You make a profit of <span class="text-secondary">$212</span> for the stay, and <span class="text-secondary">$106</span> per night at a 26% margin.</div>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="d-inline-block py-2" data-toggle="modal" data-target="#cancellationModal"><small>view cancellation policy</small></a>
+                        </div>
+                        <div class="col-2">
+                            <div class="price text-center text-primary py-4"><strong>$394</strong><small>Per night</small></div>
+                            <button class="btn btn-secondary btn-block">Change price<i class="material-icons"> chevron_right </i></button>
+                            <button class="btn btn-primary btn-block">Book now<i class="material-icons"> chevron_right </i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="room my-3">
+                    <div class="row">
+                        <div class="col-3 d-flex  align-items-center">
+                            <h3 class="px-4" data-toggle="modal" data-target="#galleryModal"><strong>Standard Room Single Beds</strong></h3>
+                        </div>
+                        <div class="col-5 d-flex  align-items-center">
+                            <div class="description text-uppercase">You make a profit of <span class="text-secondary">$212</span> for the stay, and <span class="text-secondary">$106</span> per night at a 26% margin.</div>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="d-inline-block py-2" data-toggle="modal" data-target="#cancellationModal"><small>view cancellation policy</small></a>
+                        </div>
+                        <div class="col-2">
+                            <div class="price text-center text-primary py-4"><strong>$407</strong><small>Per night</small></div>
+                            <button class="btn btn-secondary btn-block">Change price<i class="material-icons"> chevron_right </i></button>
+                            <button class="btn btn-primary btn-block">Book now<i class="material-icons"> chevron_right </i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="room my-3">
+                    <div class="row">
+                        <div class="col-3 d-flex  align-items-center">
+                            <h3 class="px-4" data-toggle="modal" data-target="#galleryModal"><strong>Standard Room Queen Bed</strong></h3>
+                        </div>
+                        <div class="col-5 d-flex  align-items-center">
+                            <div class="description text-uppercase">You make a profit of <span class="text-secondary">$212</span> for the stay, and <span class="text-secondary">$106</span> per night at a 26% margin.</div>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="d-inline-block py-2" data-toggle="modal" data-target="#cancellationModal"><small>view cancellation policy</small></a>
+                        </div>
+                        <div class="col-2">
+                            <div class="price text-center text-primary py-4"><strong>$437</strong><small>Per night</small></div>
+                            <button class="btn btn-secondary btn-block">Change price<i class="material-icons"> chevron_right </i></button>
+                            <button class="btn btn-primary btn-block">Book now<i class="material-icons"> chevron_right </i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-primary text-light mt-3 mb-5 px-3 py-2"><img src="assets/icons/info-outline-white.svg" height="24" class="mr-3"/>Remember, you can always change the price you charge customers,  to price match or increase margin. </div>
+            </div>
+        </div>     
+    </div>
+</section>
+</div>
+    <footer>
+    
+    <div class="links py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 d-none d-md-block">
+                    <img src="assets/logo.svg" class="footer-logo mb-4"/>
+                </div>
+                <div class="col-sm-3 d-none d-md-block">
+                    <ul class="footer-list">
+                        <li>sales@travelwards.com</li>
+                        <li>support@travelwards.com</li>
+                        <li>1300 49 30 50</li>
+                        <li>+61 3 8899 7599 (AUS)</li>
+                        <li>+1 (201) 365 9900 (USA)</li>
+                    </ul>
+                </div>
+
+                <div class="col-5 col-md-2">
+                    <ul class="footer-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">How to</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-7 col-md-2">
+                    <ul class="footer-list">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <div class="media text-right mb-4 d-none d-md-flex">
+                        <div class="media-body mr-4">
+                            Sydney, NSW<br/>
+                            Australia
+                        </div>
+                        <img src="assets/icons/location.svg" style="width:24px; height: auto;"/>
+                    </div>
+
+                    <div class="text-left text-md-right mt-2 mt-md-0">
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-twitter.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-instagram.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-linkedin.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon"><img src="assets/icons/social-facebook.png" class="social-icon"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary py-3 d-none d-mb-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="assets/logo-icon-white.svg" class="footer-logo-icon"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal fade sign-up-modal" id="signUpModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5">
+        <form class="sign-up">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="prefix">
+                <option selected>Prefix</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="agency" placeholder="Travel Agency">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="first_name" placeholder="First name">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="last_name" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="phone" placeholder="Phone">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="country">
+                <option selected>Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="city">
+                <option selected>City</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12 text-center">
+              <button class="btn btn-primary btn-lg">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>        <div class="modal fade change-price-modal" id="changePriceModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100">CHANGE FINAL BOOKING PRICE</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row  p-4">
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>NET RATE</label>
+                    <div class="rate-item--value"><strong>142.43<small>AUD</small></strong></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>SUGGESTED PRICE</label>
+                    <div class="rate-item--value"><strong>194.86<small>AUD</small></strong></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>CHANGE PRICE HERE</label>
+                    <div class="rate-item--value border-bottom"><input type="text" value="194.86"><small>AUD</small></strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-4">
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>NEW NET RATE *</label>
+                    <div class="rate-item--value"><strong>147<small>AUD</small></strong></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>SUGGESTED COMMISSIONS</label>
+                    <div class="rate-item--value"><strong>52.43<small>AUD</small></strong></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rate-item">
+                    <label>NEW COMMISSIONS</label>
+                    <div class="rate-item--value text-secondary"><strong>52.43<small>AUD</small></strong></div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div>Net rate may adjust to account for credit card fees</div>
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Set Price</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade facilities-modal" id="facilitiesModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100">FACILITIES</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5">
+        <div class="row">
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-gym.svg" /></div> GYM
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-business.svg" /></div> BUSINESS CENTRE
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-outdoor-pool.svg" /></div> OUTDOOR POOL
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-indoor-pool.svg" /></div> INDOOR POOL
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-non-smoking.svg" /></div> NON-SMOKING ROOM
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-air-conditioning.svg" /></div> AIR CONDITIONING
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-airport-trans.svg" /></div> AIRPORT TRANSPORTATION
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-room-service.svg" /></div> ROOM SERVICE
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-meeting-room.svg" /></div> MEETING ROOM
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="be-list-group--item py-3">
+              <div class="be-list-group--icon mr-2"><img src="assets/icons/fac-family-room.svg" /></div> FAMILY ROOM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    <div class="modal fade" id="cancellationModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100">CANCELLATION POLICY</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-primary">Please review cancellation policy carefully</p>
+        <p><strong>From Mar 16, 2018, 00:00 (UTC) to Mar, 18, 23:36 (UTC) the cancellation fee is AUD 534.57</strong></p>
+        <p><strong>From Mar 18, 2018, 23:36 (UTC) the booking is Non-Refundable</strong></p>
+        <p class="text-black-50">Note: Rate Notes: Hotel Tariff Notes: Rate not applicable to singapore citizens and permenant residents. please be advised that twin-bedded guestrooms and extra bed are subject to availability upon booking.</p>
+      </div>
+    </div>
+  </div>
+</div>    <div class="modal fade map-modal" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d63818.89791750104!2d103.785926!3d1.368012!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1528026226222" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>    <div class="modal fade gallery-modal" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image-2.jpg" />
+            </li>
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+            <li>
+              <img src="assets/others/room-image.jpg" />
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>    
+    <script src='js/libs/jquery.js'></script>
+    <script src='js/libs/popper.js'></script>
+    <script src='js/libs/bootstrap.js'></script>
+    <script src="js/libs/aos.js"></script>
+    <script src="js/libs/bootstrap-datepicker.js"></script>
+        <script src="js/libs/jquery.flexslider-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 210,
+                itemMargin: 5,
+                asNavFor: '#slider'
+            });
+            
+            $('#slider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel"
+            });
+            
+            $('#galleryModal').on('shown.bs.modal', function () {
+                $(window).trigger('resize');
+                $(window).trigger('resize');
+            })
+
+            $('.search-box .search-input').focus().blur();
+        });
+    </script>
+    
+    
+</body>
+</html>

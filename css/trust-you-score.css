@@ -1,0 +1,452 @@
+/* ------------- TrustScore -------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.trustscore {
+    position: relative;
+    font-size: 14px;
+    font-family: "Roboto", Arial, Helvetica sans-serif;
+}
+
+.trustscore:before,
+.trustscore:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.trustscore * { 
+    line-height: 1.0em;
+}
+
+.trustscore.size-s .badges .ty-icon,
+.trustscore .score {
+    color: #666;
+}
+
+.trustscore .value {
+    position: relative;
+    float: left;
+    background: #666;
+    color: #fff;
+}
+
+.trustscore .value:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-style: solid;
+    border-color: #666 transparent transparent #666;
+    content: '';
+}
+
+.trustscore-info-trigger {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    z-index: 100;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.trustscore-info-trigger:hover {
+    color: #999;
+}
+
+.trustscore-info-panel {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 99;
+    overflow: hidden;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    color: #888;
+    font-weight: normal;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+}
+
+.trustscore-info-panel.active {
+    opacity: 1;
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.trustscore-info-panel p {
+    margin: 0 0 5px;
+}
+
+.trustscore-info-panel p.info-title {
+    color: #333;
+    font-weight: 700;
+}
+
+.trustscore-info-panel a,
+.trustscore-info-panel a:link,
+.trustscore-info-panel a:visited {
+    display: block;
+    margin-top: 5px;
+    color: #333;
+    text-align: right;
+    text-decoration: none;
+}
+
+.trustscore-info-panel a:hover {
+    text-decoration: underline;
+}
+
+/* ------------- Negative ---------------- */
+
+.trustscore .badges .ty-icon.neg,
+.trustscore.neg .score {
+    color: #f37159;
+}
+
+.trustscore.neg .value {
+    background: #f37159;
+}
+
+.trustscore.neg .value:after {
+    border-color: #f37159 transparent transparent #f37159;
+}
+
+/* -------------- Neutral ---------------- */
+
+.trustscore .badges .ty-icon.neu,
+.trustscore.neu .score {
+    color: #f9c015;
+}
+
+.trustscore.neu .value {
+    background: #f9c015;
+}
+
+.trustscore.neu .value:after {
+    border-color: #f9c015 transparent transparent #f9c015;
+}
+
+/* ------------- Positive ---------------- */
+
+.trustscore .badges .ty-icon.pos,
+.trustscore.pos .score {
+    color: #119a11;
+}
+
+.trustscore.pos .value {
+    background: #119a11;
+}
+
+.trustscore.pos .value:after {
+    border-color: #119a11 transparent transparent #119a11;
+}
+
+/* --------------- XL, L ----------------- */
+
+.trustscore.size-xl,
+.trustscore.size-l {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.trustscore.size-xl .title,
+.trustscore.size-l .title {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    background: #3578c0;
+    color: #a8d1fd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.trustscore.size-xl .title span:first-child,
+.trustscore.size-l .title span:first-child {
+    color: #fff;
+}
+
+.trustscore.size-xl .value,
+.trustscore.size-l .value {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 -1px -1px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.trustscore.size-xl .score,
+.trustscore.size-l .score {
+    width: 100%;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+}
+
+.trustscore.size-xl .counter,
+.trustscore.size-l .counter {
+    color: #999;
+    text-align: center;
+}
+
+.trustscore.size-xl .signature,
+.trustscore.size-l .signature {
+    text-align: right;
+    font-style: italic;
+}
+
+/* ---------------- XL ------------------- */
+
+.trustscore.size-xl {
+    width: 144px;
+    height: 118px;
+    border-radius: 6px;
+}
+
+.trustscore.size-xl .title {
+    padding: 5px 0; 
+    border-radius: 6px 6px 0 0;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.trustscore.size-xl .value {
+    padding: 8px 0;
+    width: 70px;
+    letter-spacing: -1px;
+    font-size: 2.4em;
+}
+
+.trustscore.size-xl .value:after {
+    border-width: 9px;
+}
+
+.trustscore.size-xl .score {
+    margin-top: 30px;
+    font-size: 1.4em;
+}
+
+.trustscore.size-xl .counter {
+    margin-top: 3px;
+    font-size: .8em;
+}
+
+.trustscore.size-xl .badges {
+    margin: 24px 10px 2px 75px;
+    text-align: right;
+    font-size: .8em;
+}
+
+.trustscore.size-xl .badges .ty-icon {
+    margin-right: -3px;
+}
+
+.trustscore.size-xl .signature {
+    margin: 0 10px 0 75px;
+    font-weight: 500;
+    font-size: .65em;
+}
+
+.trustscore.size-xl .info-trigger {
+    right: -20px;
+}
+
+.trustscore.size-xl .trustscore-info-panel {
+    right: -25px;
+    bottom: -22px;
+    font-size: 11px;
+}
+
+.trustscore.size-xl .trustscore-info-panel p.info-title {
+    margin-right: 10px;
+}
+
+/* ----------------- L ------------------- */
+
+.trustscore.size-l {
+    width: 100px;
+    height: 85px;
+    border-radius: 4px;
+}
+
+.trustscore.size-l .title {
+    padding: 4px 0;
+    border-radius: 4px 4px 0 0;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.trustscore.size-l .value {
+    padding: 6px 0;
+    width: 43px;
+    letter-spacing: -1px;
+    font-size: 1.6em;
+}
+
+.trustscore.size-l .value:after {
+    border-width: 6px;
+}
+
+.trustscore.size-l .score {
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 1.0em;
+}
+
+.trustscore.size-l .counter {
+    margin-top: 2px;
+    font-size: .65em;
+}
+
+.trustscore.size-l .badges {
+    margin: 14px 7px 1px 47px;
+    text-align: right;
+    font-size: .65em;
+}
+
+.trustscore.size-l .badges .ty-icon {
+    margin-right: -2px;
+}
+
+.trustscore.size-l .signature {
+    margin: 0 7px 0 47px;
+    font-weight: 500;
+    font-size: .5em;
+}
+
+.trustscore.size-l .info-trigger {
+    top: 3px;
+    right: -20px;
+}
+
+.trustscore.size-l .trustscore-info-panel {
+    right: -24px;
+    bottom: -15px;
+    font-size: 10px;
+}
+
+.trustscore.size-l .trustscore-info-panel p {
+    margin-bottom: 3px;
+}
+
+.trustscore.size-l .trustscore-info-panel p.info-title {
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+/* ----------------- M ------------------- */
+
+.trustscore.size-m .value {
+    margin: 0 8px 0 0;
+    padding: 6px 8px;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.trustscore.size-m .value:after {
+    border-width: 6px;
+}
+
+.trustscore.size-m .score {
+    margin: 0px 10px 0 0;
+    font-weight: 500;
+    font-size: 1.45em;
+}
+
+.trustscore.size-m .badges {
+    font-size: .6em;
+}
+
+.trustscore.size-m .badges .ty-icon {
+    margin-right: -1px;
+}
+
+.trustscore.size-m .counter {
+    margin-top: 4px;
+    color: #999;
+    font-weight: 500;
+    font-style: italic;
+    font-size: .65em;
+}
+
+/* ----------------- S ------------------- */
+
+.trustscore.size-s .value {
+    margin: 0 6px 0 0;
+    padding: 5px 6px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.trustscore.size-s .value:after {
+    border-width: 4px;
+}
+
+.trustscore.size-s .score {
+    display: inline-block;
+    float: left;
+    margin: 0px 10px 0 0;
+    font-weight: 500;
+    font-size: 1.45em;
+}
+
+.trustscore.size-s .badges {
+    font-size: .6em;
+}
+
+.trustscore.size-s .badges .ty-icon {
+    margin-right: -1px;
+}
+
+.trustscore.size-s .counter {
+    float: left;
+    margin-top: 6px;
+    color: #b5b5b5;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* ----------------- XS ------------------ */
+
+.trustscore.size-xs .value {
+    margin: 0 3px 0 0;
+    padding: 2px 2px;
+    font-weight: 500;
+    font-size: .85em;
+}
+
+.trustscore.size-xs .value:after {
+    border-width: 2px;
+}
+
+.trustscore.size-xs .score {
+    display: inline-block;
+    float: left;
+    margin: -1px 5px 0 0;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.trustscore.size-xs .badges {
+    font-size: .3em;
+}
+
+.trustscore.size-xs .counter {
+    float: left;
+    color: #b5b5b5;
+    font-weight: 500;
+    font-style: italic;
+    font-size: .8em;
+}

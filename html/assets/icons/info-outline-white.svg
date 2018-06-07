@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Asset 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-7">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="0.75" cx="7.247" cy="7.247" r="6.872"></circle>
+            <path d="M6.255,3.571 C6.25459516,3.32528551 6.35467112,3.09008893 6.532,2.92 C6.71759913,2.7358803 6.97068686,2.63609142 7.232,2.644 C7.49515065,2.63656319 7.75098612,2.73115782 7.946,2.908 C8.13546787,3.07559568 8.24154302,3.31810544 8.236,3.571 C8.24138381,3.82357504 8.13531079,4.06571413 7.946,4.233 C7.75108581,4.41011477 7.49527046,4.50506024 7.232,4.498 C6.97045648,4.50612154 6.71716578,4.40589079 6.532,4.221 C6.35413285,4.05169768 6.25392727,3.81655824 6.255,3.571 Z M6.474,5.671 L8.019,5.671 L8.019,11.851 L6.474,11.851 L6.474,5.671 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

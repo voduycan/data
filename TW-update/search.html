@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelWards</title>
+    <!-- Styles -->
+    <link href="app.css" rel="stylesheet">
+</head>
+<body class="">
+    <nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.svg" class="d-none d-lg-block"/>
+            <img src="assets/logo-icon.svg" class="d-block d-lg-none"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                    <a class="nav-link d-block d-md-none my-3 text-secondary" href="#">SIGN IN</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/about">ABOUT</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOW TO</a>
+                </li>
+
+                <li class="nav-item d-md-none d-xl-block  ">
+                    <a class="nav-link" href="/faq">FAQs</a>
+                </li>
+
+                <li class="nav-item d-md-none d-xl-block  ">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+
+                <li class="nav-item dropdown  d-none d-md-block d-xl-none px-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MORE
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right px-4" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item d-block d-xl-none p-3" href="#">FAQs</a>
+                        <a class="dropdown-item d-block d-xl-none p-3" href="#">CONTACT US</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#"><img src="assets/icons/phone-outline.svg" class="mr-2"/>1300 49 30 50</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0 ml-3 d-none d-md-block">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown sign-in-dropdown">
+                        <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <button class="btn btn-sm btn-outline-secondary btn-rounded sign-in-button" data-toggle="aside" data-target="#right-aside">SIGN IN</button>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <form class="py-4 px-3">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-outline-secondary btn-rounded">Sign In</button>
+                                <button type="button" class="btn btn-sm btn-link ml-3"  data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </dvi>
+</nav>    <div class="page-search">
+    <section class="search p-5">
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1 class="text-primary display-4 font-weight-bold">We'll find you the best hotel margins...</h1>
+                <h2 class="text-black-50"><strong>then you can set your own final price</strong></h2>
+            </div>
+        </div>
+        
+        <div class="row search-box  no-gutters">
+    <div class="col-3">
+        <input type="text" class="search-input" placeholder="search" />
+    </div>
+    <div class="col-2">
+        <div class="search--dropdown checkin">
+            <div class="form-item">
+                <label>Checkin</label>
+                <div class="form-item--value">
+                    <input id="checkin-datepicker" class="datepicker-input" value="05-16-2018" />
+                </div>
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/date-picker.svg" height="18" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="search--dropdown checkout">
+            <div class="form-item">
+                <label>Check Out</label>
+                <div class="form-item--value">
+                    <input id="checkout-datepicker" class="datepicker-input" value="05-17-2018" />
+                </div>
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/date-picker.svg" height="18" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+    </div>
+    <div class="col-3 dropdown">
+        <div class="search--dropdown" data-toggle="dropdown">
+            <div class="form-item " id="dropdownGuest">
+                <label>Rooms & Guests</label>
+                <div class="form-item--value">1 Room, 1 Adult, 0 child</div>
+
+            </div>
+            <div class="form-icon">
+                <img src="assets/icons/guests-outline.svg" height="12" />
+                <img src="assets/icons/arrow-down.svg" height="6" />
+            </div>
+        </div>
+        <div class="dropdown-menu pt-2 px-4" aria-labelledby="dropdownGuest">
+            <form>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Rooms
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-room" placeholder="1">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Adults
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-adults" placeholder="1">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-7 d-flex align-items-center">
+                            Children
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">-</div>
+                                </div>
+                                <input type="text" class="form-control text-center" id="number-of-children" placeholder="0">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-2">
+        <button class="btn btn-primary btn-lg btn-block">SEARCH</button>
+    </div>
+</div>
+        <div class="row py-5">
+            <div class="col-3">
+                <div class="search-filter">
+                    <button class="btn">1 <i class="material-icons">star</i></button>
+                    <button class="btn">2 <i class="material-icons">star</i></button>
+                    <button class="btn">3 <i class="material-icons">star</i></button>
+                    <button class="btn active">4 <i class="material-icons">star</i></button>
+                    <button class="btn active">5 <i class="material-icons">star</i></button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="search-filter">
+                    <img src="assets/trust-you.svg" height="24"/>
+                    <button class="btn">poor</button>
+                    <button class="btn">fair</button>
+                    <button class="btn">good</button>
+                    <button class="btn active">very good</button>
+                    <button class="btn active">excellent</button>
+                </div>
+            </div>
+            <div class="col-3">
+                <form class="text-right text-black-50 font-weight-bold">
+                    <input class="form-check-input" type="checkbox" id="gridCheck11">
+                    <label class="form-check-label" for="gridCheck11">
+                        Remove Preselected filters
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+</div>
+    <footer>
+    
+    <div class="links py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 d-none d-md-block">
+                    <img src="assets/logo.svg" class="footer-logo mb-4"/>
+                </div>
+                <div class="col-sm-3 d-none d-md-block">
+                    <ul class="footer-list">
+                        <li>sales@travelwards.com</li>
+                        <li>support@travelwards.com</li>
+                        <li>1300 49 30 50</li>
+                        <li>+61 3 8899 7599 (AUS)</li>
+                        <li>+1 (201) 365 9900 (USA)</li>
+                    </ul>
+                </div>
+
+                <div class="col-5 col-md-2">
+                    <ul class="footer-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">How to</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-7 col-md-2">
+                    <ul class="footer-list">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <div class="media text-right mb-4 d-none d-md-flex">
+                        <div class="media-body mr-4">
+                            Sydney, NSW<br/>
+                            Australia
+                        </div>
+                        <img src="assets/icons/location.svg" style="width:24px; height: auto;"/>
+                    </div>
+
+                    <div class="text-left text-md-right mt-2 mt-md-0">
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-twitter.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-instagram.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon mr-2"><img src="assets/icons/social-linkedin.png" class="social-icon"/></a>
+                        <a href="#" class="social-icon"><img src="assets/icons/social-facebook.png" class="social-icon"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary py-3 d-none d-mb-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="assets/logo-icon-white.svg" class="footer-logo-icon"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal fade sign-up-modal" id="signUpModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5">
+        <form class="sign-up">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="prefix">
+                <option selected>Prefix</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="agency" placeholder="Travel Agency">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="first_name" placeholder="First name">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="last_name" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="phone" placeholder="Phone">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="country">
+                <option selected>Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <select class="custom-select mr-sm-2" id="city">
+                <option selected>City</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12 text-center">
+              <button class="btn btn-primary btn-lg">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>        
+    <script src='js/libs/jquery.js'></script>
+    <script src='js/libs/popper.js'></script>
+    <script src='js/libs/bootstrap.js'></script>
+    <script src="js/libs/aos.js"></script>
+    <script src="js/libs/bootstrap-datepicker.js"></script>
+        <script src="js/libs/bootstrap-slider.min.js"></script>
+    <script src="js/libs/bootstrap-rating.min.js"></script>
+    <script src="js/libs/pie-chart.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#checkin-datepicker').datepicker();
+            $('#checkout-datepicker').datepicker();
+            $('.search--dropdown.checkin').click(function(){
+               $('#checkin-datepicker').datepicker('show');
+            });
+            $('.search--dropdown.checkout').click(function(){
+               $('#checkout-datepicker').datepicker('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.search-filter .btn').click(function(){
+                if($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+            });
+            $('.search-box .search-input').focus().blur();
+            
+        });
+    </script>
+
+    
+    
+</body>
+</html>
