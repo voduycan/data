@@ -1,10 +1,4 @@
-body {
-    color: #737373;
-    font-family: 'Open Sans', Tahoma, Arial, helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.6em;
-    font-weight: 400;
-}
+
 
 a {
     color: #ed8323;
@@ -3560,10 +3554,7 @@ aside.sidebar-left {
     font-style: italic;
 }
 
-::selection {
-    background: #ed8323;
-    color: #fff;
-}
+
 
 .datepicker {
     padding: 4px;

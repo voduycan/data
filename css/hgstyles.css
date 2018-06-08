@@ -331,70 +331,6 @@ button {
 
 /*HG HEADER STYLE*/
 
-.header-top {
-    border-bottom: 0.5px solid #cacaca;
-}
-
-@media (max-width: 991px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-collapse.collapse.in {
-        /* NEW */
-        display: block!important;
-        overflow-y: visible !important;
-    }
-    .top-user-area .top-user-area-list {
-        text-align: left;
-    }
-}
-
-@media(max-width:767px) {
-    .logo {
-        padding-top: 6px;
-    }
-    #logo-image {
-        max-height: 25px !important;
-    }
-    .text-center-xs {
-        text-align: center !important;
-    }
-    .manage-form-holder {
-        padding: 15px;
-    }
-}
-
-.navbar-toggle {
-    border: 1px solid #4a6176;
-    margin: 3px 0 0 0;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: #4a6176;
-    height: 1px;
-}
-
 .hg-nav {
     font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
     font-weight: 500;
@@ -2206,18 +2142,7 @@ p#amount {
 
 /*ACCOUNT PAGE STYLE*/
 
-.account-page {
-    font-family: 'Roboto', arial, helvetica, sans-serif;
-}
 
-.account-page h1,
-.account-page h2,
-.account-page h3,
-.account-page h4,
-.account-page h5,
-.account-page h6 {
-    font-family: 'Roboto', arial, helvetica, sans-serif;
-}
 
 .left-account {
     padding: 30px 0;
