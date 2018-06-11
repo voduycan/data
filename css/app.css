@@ -1522,7 +1522,7 @@ pre code {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
-    max-width: 75%;
+    max-width: 74%;
   }
 
   .col-lg-10 {
